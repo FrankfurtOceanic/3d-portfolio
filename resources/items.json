@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Glass Dispersion",
+        "image": "resources/images/teeth.png",
+        "description": "By adding refraction shaders with different IOR, I was able to achieve an interesting glass material. Combining with a glass BRDF made for a fun lighting challenger.  "
+    },
+
+    {
+        "name": "Fluid Knight",
+        "image": "resources/images/glossy_statue.png",
+        "description": "I wanted to explore more of Houdini's simulation worklfow and combine it with a glossy aesthetic. I created a flip sim by converting my knight mesh to a vdb and remeshing back to act as the collider. From there, I added an emmitter to obtain the flip particle output. To finilize it, I created a mesh from the particle points. Adding a transparent material and glossy shader to knight led me to interesting visualise. The high reflectance led to me putting more effort into the lighting but gave it a really cool look that I want to explore more. In the end, I'm happy with the a cool render I came out with and the added new Houdini knowledge"
+    },
+
+    {
+        "name": "yggdrasil",
+        "image": "resources/images/yggdrasil.png",
+        "description": "This is the yggdrasil project."
+    },
+    {
+        "name": "yggdrasil",
+        "image": "resources/images/yggdrasil.png",
+        "description": "This is the yggdrasil project."
+    },
+
+    {
+        "name": "yggdrasil",
+        "image": "resources/images/yggdrasil.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus posuere augue, vitae tincidunt quam euismod et. Nam et dignissim justo. Etiam ac maximus ante. Sed sit amet metus iaculis, vulputate arcu ut, auctor nunc. Integer a venenatis eros. Aliquam porttitor ex quis laoreet vestibulum. Nullam volutpat viverra turpis, ut rutrum neque suscipit nec."
+    },
+
+    {
+        "name": "yggdrasil",
+        "image": "resources/images/yggdrasil.png",
+        "description": "This is the yggdrasil project."
+    },
+    {
+        "name": "yggdrasil",
+        "image": "resources/images/yggdrasil.png",
+        "description": "This is the yggdrasil project."
+    },
+
+    {
+        "name": "yggdrasil",
+        "image": "resources/images/yggdrasil.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus posuere augue, vitae tincidunt quam euismod et. Nam et dignissim justo. Etiam ac maximus ante. Sed sit amet metus iaculis, vulputate arcu ut, auctor nunc. Integer a venenatis eros. Aliquam porttitor ex quis laoreet vestibulum. Nullam volutpat viverra turpis, ut rutrum neque suscipit nec."
+    },
+
+    {
+        "name": "yggdrasil",
+        "image": "resources/images/yggdrasil.png",
+        "description": "This is the yggdrasil project."
+    },
+
+    {
+        "name": "yggdrasil",
+        "image": "resources/images/yggdrasil.png",
+        "description": "This is the yggdrasil project."
+    }
+]
