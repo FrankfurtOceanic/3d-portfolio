@@ -147,6 +147,9 @@ section {
   flex-direction: column;
   gap: 1rem;
   opacity: 0.25;
+  background-color: #0f0f0f81;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .spotlight-item h1 {
@@ -156,7 +159,7 @@ section {
 .spotlight-item p {
   padding-left: 1rem;
   color: #fff;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .spotlight-image-sequence {
