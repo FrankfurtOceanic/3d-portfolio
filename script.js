@@ -51,7 +51,15 @@ lenis.on("scroll", ScrollTrigger.update);
 gsap.ticker.add((time) => lenis.raf(time * 1000));
 gsap.ticker.lagSmoothing(0);
 
-document.querySelector(".spotlight-bg-img img").src = items[0].image;
+const bgWrapper = document.querySelector(".spotlight-bg-img");
+const bgImg = bgWrapper.querySelector("img");
+
+bgImg.src = items[0].image;
+
+if (items[0].isVertical) {
+  bgWrapper.classList.add("contain");
+}
+
 const itemElements = document.querySelector(".spotlight-items");
 const imagesContainer = document.querySelector(".spotlight-image-sequence");
 const spotlightHeader = document.querySelector(".spotlight-header");
@@ -74,7 +82,7 @@ items.forEach((item, index) => {
   containerElement.appendChild(titleElement);
 
   const textElement = document.createElement("p");
-  textElement.textContent = item.description;
+  textElement.innerHTML = item.description;
   containerElement.appendChild(textElement);
 
   itemElements.appendChild(containerElement);
@@ -169,7 +177,7 @@ ScrollTrigger.create({
           transform: `scale(${phaseProgress})`,
         });
         gsap.set(".spotlight-bg-img img", {
-          transform: `scale(${2 - phaseProgress * 1})`,
+          transform: `scale(${2 - phaseProgress})`,
         });
 
         imageElements.forEach((img) => gsap.set(img, { opacity: 0 }));
@@ -276,8 +284,18 @@ ScrollTrigger.create({
         if (closestIndex !== currentActiveIndex) {
           spotlightItems[currentActiveIndex].style.opacity = 0.25;
           spotlightItems[closestIndex].style.opacity = 1;
-          document.querySelector(".spotlight-bg-img img").src =
-            items[closestIndex].image;
+
+          const bgWrapper = document.querySelector(".spotlight-bg-img");
+          const bgImg = bgWrapper.querySelector("img");
+
+          bgImg.src = items[closestIndex].image;
+
+          if (items[closestIndex].isVertical) {
+            bgWrapper.classList.add("contain");
+          } else {
+            bgWrapper.classList.remove("contain");
+          }
+
           currentActiveIndex = closestIndex;
         }
 

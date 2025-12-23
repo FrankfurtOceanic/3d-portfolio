@@ -2,58 +2,45 @@
     {
         "name": "Glass Dispersion",
         "image": "resources/images/teeth.png",
-        "description": "By adding refraction shaders with different IOR, I was able to achieve an interesting glass material. Combining with a glass BRDF made for a fun lighting challenger.  "
+        "description": "By adding refraction shaders with different IOR, I was able to achieve an interesting glass material. Combining with a glass BRDF made for a fun lighting challenger."
     },
 
     {
         "name": "Fluid Knight",
         "image": "resources/images/glossy_statue.png",
-        "description": "I wanted to explore more of Houdini's simulation worklfow and combine it with a glossy aesthetic. I created a flip sim by converting my knight mesh to a vdb and remeshing back to act as the collider. From there, I added an emmitter to obtain the flip particle output. To finilize it, I created a mesh from the particle points. Adding a transparent material and glossy shader to knight led me to interesting visualise. The high reflectance led to me putting more effort into the lighting but gave it a really cool look that I want to explore more. In the end, I'm happy with the a cool render I came out with and the added new Houdini knowledge"
+        "description": "I wanted to explore more of Houdini's simulation worklfow and combine it with a glossy aesthetic. I created a flip sim by converting my knight mesh to a vdb and remeshing back to act as the collider. From there, I added an emmitter to obtain the flip particle output. To finilize it, I created a mesh from the particle points. Adding a transparent material and glossy shader to knight led me to interesting visualise. The high reflectance led to me putting more effort into the lighting but gave it a really cool look that I want to explore more. In the end, I'm happy with the a cool render I came out with and the added new Houdini knowledge",
+        "isVertical": true
     },
 
     {
-        "name": "yggdrasil",
-        "image": "resources/images/yggdrasil.png",
-        "description": "This is the yggdrasil project."
-    },
-    {
-        "name": "yggdrasil",
-        "image": "resources/images/yggdrasil.png",
-        "description": "This is the yggdrasil project."
+        "name": "Yum Control",
+        "image": "resources/images/yum_control.png",
+        "description": "Retro pre-rendered graphics inspired poster. Made in blender. Excersice in modeling, lighting, and materials. Post-process done in affinity to try a new tool.",
+        "isVertical": true
     },
 
     {
-        "name": "yggdrasil",
-        "image": "resources/images/yggdrasil.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus posuere augue, vitae tincidunt quam euismod et. Nam et dignissim justo. Etiam ac maximus ante. Sed sit amet metus iaculis, vulputate arcu ut, auctor nunc. Integer a venenatis eros. Aliquam porttitor ex quis laoreet vestibulum. Nullam volutpat viverra turpis, ut rutrum neque suscipit nec."
+        "name": "Rampage Rally",
+        "image": "resources/images/thumbnail-base.png",
+        "description": "<b><a href=\"https://youtu.be/AdPuHkuLhP8?si=sBXV_R7u9PMsRIk_\">Youtube</a></b> | Made within 2 weeks for the rampage rally animation contest. Looped fan animation created in Blender. Textures made in Substance Painter."
     },
 
     {
-        "name": "yggdrasil",
+        "name": "Yggdrasil",
         "image": "resources/images/yggdrasil.png",
-        "description": "This is the yggdrasil project."
-    },
-    {
-        "name": "yggdrasil",
-        "image": "resources/images/yggdrasil.png",
-        "description": "This is the yggdrasil project."
+        "description": "Inspred by Norse mythology, I created a stylized version of Yggdrasil, the world tree that connects the nine realms. I modeled the tree using curves that were arrayed radially. The inner light comes from a smaller curve following the same path and using an emission shader. "
     },
 
     {
-        "name": "yggdrasil",
-        "image": "resources/images/yggdrasil.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus posuere augue, vitae tincidunt quam euismod et. Nam et dignissim justo. Etiam ac maximus ante. Sed sit amet metus iaculis, vulputate arcu ut, auctor nunc. Integer a venenatis eros. Aliquam porttitor ex quis laoreet vestibulum. Nullam volutpat viverra turpis, ut rutrum neque suscipit nec."
+        "name": "Substance Painter - Robot",
+        "image": "resources/images/Painted_robot_4_close.jpg",
+        "description": "A robot model I got to textured in Substance Painter. I focused on creating a worn metal look with some painted details to give it character."
     },
-
+    
     {
-        "name": "yggdrasil",
-        "image": "resources/images/yggdrasil.png",
-        "description": "This is the yggdrasil project."
-    },
-
-    {
-        "name": "yggdrasil",
-        "image": "resources/images/yggdrasil.png",
-        "description": "This is the yggdrasil project."
+        "name": "Artificial sorrow",
+        "image": "resources/images/sadrobot.png",
+        "description": "A material study in Blender focusing on creating a realistic silicone material. Additional inspiration taken from graphic realism styles."
     }
+    
 ]
