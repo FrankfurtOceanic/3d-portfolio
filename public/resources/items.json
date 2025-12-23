@@ -22,7 +22,13 @@
     {
         "name": "Rampage Rally",
         "image": "resources/images/thumbnail-base.png",
-        "description": "<b><a href=\"https://youtu.be/AdPuHkuLhP8?si=sBXV_R7u9PMsRIk_\">Youtube</a></b> | Made within 2 weeks for the rampage rally animation contest. Looped fan animation created in Blender. Textures made in Substance Painter."
+        "description": "<b><a href=\"https://youtu.be/AdPuHkuLhP8?si=sBXV_R7u9PMsRIk_\">Youtube</a></b> | Made within 2 weeks for the Rampage Rally animation contest. Looped fan animation created in Blender. Textures made in Substance Painter."
+    },
+    
+    {
+        "name": "Chasm's Call",
+        "image": "resources/images/chasms_call.png",
+        "description": "<b><a href=\"https://www.youtube.com/watch?v=kNw2bDvP51k\">Youtube</a></b> | Animation Made within 1 weeks for the Chasm's Call animation contest."
     },
 
     {
@@ -42,5 +48,7 @@
         "image": "resources/images/sadrobot.png",
         "description": "A material study in Blender focusing on creating a realistic silicone material. Additional inspiration taken from graphic realism styles."
     }
+
+
     
 ]
