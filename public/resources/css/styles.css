@@ -267,6 +267,9 @@ section {
 
   .intro-text-wrapper {
     color: #fff;
+    padding: 4rem;
+    padding-top: 25%;
+    padding-left: 40%;
   }
 
   .spotlight-items-container {
