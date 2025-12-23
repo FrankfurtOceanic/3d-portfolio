@@ -51,14 +51,7 @@ lenis.on("scroll", ScrollTrigger.update);
 gsap.ticker.add((time) => lenis.raf(time * 1000));
 gsap.ticker.lagSmoothing(0);
 
-const bgWrapper = document.querySelector(".spotlight-bg-img");
-const bgImg = bgWrapper.querySelector("img");
-
-bgImg.src = items[0].image;
-
-if (items[0].isVertical) {
-  bgWrapper.classList.add("contain");
-}
+setBackgroundMedia(items[0]);
 
 const itemElements = document.querySelector(".spotlight-items");
 const imagesContainer = document.querySelector(".spotlight-image-sequence");
@@ -141,6 +134,51 @@ function getImgProgressState(index, overallProgress, bezierOffset = 0) {
 
   return t; // can be < 0 or > 1, we’ll clamp later in the MAIN loop
 }
+function setBackgroundMedia(item) {
+  const bgWrapper = document.querySelector(".spotlight-bg-img");
+
+  // Clear previous background
+  bgWrapper.innerHTML = "";
+
+  let media;
+
+  if (item.video) {
+    media = document.createElement("video");
+    media.src = item.video;
+    media.poster = item.poster || item.image;
+    media.autoplay = true;
+    media.loop = true;
+    media.muted = true;
+    media.playsInline = true;
+    media.preload = "metadata";
+  } else {
+    media = document.createElement("img");
+    media.src = item.image;
+    media.alt = item.name;
+  }
+
+  bgWrapper.appendChild(media);
+
+  // Preserve your vertical handling
+  if (item.isVertical) {
+    bgWrapper.classList.add("contain");
+  } else {
+    bgWrapper.classList.remove("contain");
+  }
+}
+
+function updateVideoPlayback(activeIndex) {
+  imageElements.forEach(({ media, hasVideo }, index) => {
+    if (!hasVideo) return;
+
+    if (index === activeIndex) {
+      media.play().catch(() => {});
+    } else {
+      media.pause();
+      media.currentTime = 0;
+    }
+  });
+}
 
 imageElements.forEach((img) => gsap.set(img, { opacity: 0 }));
 
@@ -177,7 +215,7 @@ ScrollTrigger.create({
         gsap.set(".spotlight-bg-img", {
           transform: `scale(${phaseProgress})`,
         });
-        gsap.set(".spotlight-bg-img img", {
+        gsap.set(".spotlight-bg-img img, .spotlight-bg-img video", {
           transform: `scale(${2 - phaseProgress})`,
         });
 
@@ -204,7 +242,9 @@ ScrollTrigger.create({
         }
 
         gsap.set(".spotlight-bg-img", { scale: 1 });
-        gsap.set(".spotlight-bg-img img", { scale: 1 });
+        gsap.set(".spotlight-bg-img img, .spotlight-bg-img video", {
+          scale: 1,
+        });
 
         gsap.set(introTextElements[0], { opacity: 0 });
         gsap.set(introTextElements[1], { opacity: 0 });
@@ -221,7 +261,9 @@ ScrollTrigger.create({
         const phaseProgress = getCurrentPhaseProgress(phase, progress);
 
         gsap.set(".spotlight-bg-img", { scale: 1 });
-        gsap.set(".spotlight-bg-img img", { scale: 1 });
+        gsap.set(".spotlight-bg-img img, .spotlight-bg-img video", {
+          scale: 1,
+        });
 
         gsap.set(introTextElements[0], { opacity: 0 });
         gsap.set(introTextElements[1], { opacity: 0 });
@@ -286,16 +328,8 @@ ScrollTrigger.create({
           spotlightItems[currentActiveIndex].style.opacity = 0.25;
           spotlightItems[closestIndex].style.opacity = 1;
 
-          const bgWrapper = document.querySelector(".spotlight-bg-img");
-          const bgImg = bgWrapper.querySelector("img");
-
-          bgImg.src = items[closestIndex].image;
-
-          if (items[closestIndex].isVertical) {
-            bgWrapper.classList.add("contain");
-          } else {
-            bgWrapper.classList.remove("contain");
-          }
+          setBackgroundMedia(items[closestIndex]);
+          updateVideoPlayback(closestIndex);
 
           currentActiveIndex = closestIndex;
         }
