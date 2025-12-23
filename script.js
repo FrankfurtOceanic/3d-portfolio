@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const config = {
   gap: 0.08,
-  speed: 0.3,
+  speed: 0.4,
   bezierOffset: 0.5,
   arcRadius: 500,
   introProgress: 0.2,
@@ -92,6 +92,7 @@ items.forEach((item, index) => {
   const imgElement = document.createElement("img");
 
   imgElement.src = item.image;
+  imgElement.style.borderRadius = "3%";
   imgElement.alt = item.name;
 
   imgWrapper.appendChild(imgElement);
