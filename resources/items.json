@@ -1,33 +1,39 @@
 [
     {
-        "name": "Glass Dispersion",
-        "image": "resources/images/teeth.png",
-        "description": "By adding refraction shaders with different IOR, I was able to achieve an interesting glass material. Combining with a glass BRDF made for a fun lighting challenger."
-    },
-
-    {
         "name": "Rampage Rally",
         "image": "resources/images/thumbnail-base.png",
-        "description": "<b><a href=\"https://youtu.be/AdPuHkuLhP8?si=sBXV_R7u9PMsRIk_\">Youtube</a></b> | Made within 2 weeks for the Rampage Rally animation contest. Looped fan animation created in Blender. Textures made in Substance Painter."
+        "description": "<b><a href=\"https://youtu.be/AdPuHkuLhP8?si=sBXV_R7u9PMsRIk_\">Youtube</a></b> | Made within 2 weeks for the Rampage Rally animation contest. Looped fan animation created in Blender. Textures made in Substance Painter.",
+        "video": "resources/video/rampage_rally.mp4",
+        "poster": "resources/video/poster/rampage_rally.jpg"
     },
     
     {
         "name": "Chasm's Call",
         "image": "resources/images/chasms_call.png",
-        "description": "<b><a href=\"https://www.youtube.com/watch?v=kNw2bDvP51k\">Youtube</a></b> | Animation Made within 1 weeks for the Chasm's Call animation contest."
+        "description": "<b><a href=\"https://www.youtube.com/watch?v=kNw2bDvP51k\">Youtube</a></b> | Animation Made within 1 weeks for the Chasm's Call animation contest.",
+        "video": "resources/video/chasms_call.mp4",
+        "poster": "resources/video/poster/chasms_call.jpg"
+    },
+
+    {
+        "name": "Soulless Intro",
+        "image": "resources/images/book_2.png",
+        "description": "A short intro animation I made for the music video for Soulless by Nyota Parker.",
+        "video": "resources/video/soulless.mp4",
+        "poster": "resources/video/poster/soulless.jpg"
     },
 
     {
         "name": "Artificial sorrow",
         "image": "resources/images/sadrobot.png",
         "description": "A material study in Blender focusing on creating a realistic silicone material. Additional inspiration taken from graphic realism styles."
-    },
+    }, 
 
     {
-        "name": "Soulless Intro",
-        "image": "resources/images/book_2.png",
-        "description": "A short intro animation I made for the music video for Soulless by Nyota Parker."
-    }, 
+        "name": "Glass Dispersion",
+        "image": "resources/images/teeth.png",
+        "description": "By adding refraction shaders with different IOR, I was able to achieve an interesting glass material. Combining with a glass BRDF made for a fun lighting challenger."
+    },
 
     {
         "name": "Substance Painter - Robot",
