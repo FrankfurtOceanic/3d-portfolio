@@ -271,6 +271,8 @@ section {
 
   .spotlight-items-container {
     clip-path: none;
+    left: 0;
+    padding: 1rem;
   }
 
   .spotlight-items-container::after,
@@ -280,6 +282,7 @@ section {
 
   .spotlight-items {
     left: 0;
+    width: auto;
   }
 
   .spotlight-header {
