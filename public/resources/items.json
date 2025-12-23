@@ -44,21 +44,21 @@
         {
         "name": "Fluid Knight",
         "image": "resources/images/glossy_statue.png",
-        "description": "I wanted to explore more of Houdini's simulation worklfow and combine it with a glossy aesthetic. I created a flip sim by converting my knight mesh to a vdb and remeshing back to act as the collider. From there, I added an emmitter to obtain the flip particle output. To finilize it, I created a mesh from the particle points. Adding a transparent material and glossy shader to knight led me to interesting visualise. The high reflectance led to me putting more effort into the lighting but gave it a really cool look that I want to explore more. In the end, I'm happy with the a cool render I came out with and the added new Houdini knowledge",
+        "description": "I wanted to explore more of Houdini's simulation workflow and combine it with a glossy aesthetic. I created a flip sim by converting my knight mesh to a vdb and remeshing back to act as the collider. From there, I added an emitter to obtain the flip particle output. To finalize it, I created a mesh from the particle points. Adding a transparent material and glossy shader to knight led me to interesting visuals. The high reflectance led to me putting more effort into the lighting but gave it a really cool look that I want to explore more. In the end, I'm happy with the a cool render I came out with and the added new Houdini knowledge",
         "isVertical": true
     },
 
     {
         "name": "Yum Control",
         "image": "resources/images/yum_control.png",
-        "description": "Retro pre-rendered graphics inspired poster. Made in blender. Excersice in modeling, lighting, and materials. Post-process done in affinity to try a new tool.",
+        "description": "Retro pre-rendered graphics inspired poster. Made in blender. Exercise in modeling, lighting, and materials. Post-process done in affinity to try a new tool.",
         "isVertical": true
     },
 
     {
         "name": "Yggdrasil",
         "image": "resources/images/yggdrasil.png",
-        "description": "Inspred by Norse mythology, I created a stylized version of Yggdrasil, the world tree that connects the nine realms. I modeled the tree using curves that were arrayed radially. The inner light comes from a smaller curve following the same path and using an emission shader. "
+        "description": "Inspired by Norse mythology, I created a stylized version of Yggdrasil, the world tree that connects the nine realms. I modeled the tree using curves that were arrayed radially. The inner light comes from a smaller curve following the same path and using an emission shader. "
     }
 
     
