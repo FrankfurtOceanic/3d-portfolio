@@ -6,6 +6,36 @@
     },
 
     {
+        "name": "Rampage Rally",
+        "image": "resources/images/thumbnail-base.png",
+        "description": "<b><a href=\"https://youtu.be/AdPuHkuLhP8?si=sBXV_R7u9PMsRIk_\">Youtube</a></b> | Made within 2 weeks for the Rampage Rally animation contest. Looped fan animation created in Blender. Textures made in Substance Painter."
+    },
+    
+    {
+        "name": "Chasm's Call",
+        "image": "resources/images/chasms_call.png",
+        "description": "<b><a href=\"https://www.youtube.com/watch?v=kNw2bDvP51k\">Youtube</a></b> | Animation Made within 1 weeks for the Chasm's Call animation contest."
+    },
+
+    {
+        "name": "Artificial sorrow",
+        "image": "resources/images/sadrobot.png",
+        "description": "A material study in Blender focusing on creating a realistic silicone material. Additional inspiration taken from graphic realism styles."
+    },
+
+    {
+        "name": "Soulless Intro",
+        "image": "resources/images/book_2.png",
+        "description": "A short intro animation I made for the music video for Soulless by Nyota Parker."
+    }, 
+
+    {
+        "name": "Substance Painter - Robot",
+        "image": "resources/images/Painted_robot_4_close.jpg",
+        "description": "A robot model I got to textured in Substance Painter. I focused on creating a worn metal look with some painted details to give it character."
+    },
+
+        {
         "name": "Fluid Knight",
         "image": "resources/images/glossy_statue.png",
         "description": "I wanted to explore more of Houdini's simulation worklfow and combine it with a glossy aesthetic. I created a flip sim by converting my knight mesh to a vdb and remeshing back to act as the collider. From there, I added an emmitter to obtain the flip particle output. To finilize it, I created a mesh from the particle points. Adding a transparent material and glossy shader to knight led me to interesting visualise. The high reflectance led to me putting more effort into the lighting but gave it a really cool look that I want to explore more. In the end, I'm happy with the a cool render I came out with and the added new Houdini knowledge",
@@ -20,35 +50,10 @@
     },
 
     {
-        "name": "Rampage Rally",
-        "image": "resources/images/thumbnail-base.png",
-        "description": "<b><a href=\"https://youtu.be/AdPuHkuLhP8?si=sBXV_R7u9PMsRIk_\">Youtube</a></b> | Made within 2 weeks for the Rampage Rally animation contest. Looped fan animation created in Blender. Textures made in Substance Painter."
-    },
-    
-    {
-        "name": "Chasm's Call",
-        "image": "resources/images/chasms_call.png",
-        "description": "<b><a href=\"https://www.youtube.com/watch?v=kNw2bDvP51k\">Youtube</a></b> | Animation Made within 1 weeks for the Chasm's Call animation contest."
-    },
-
-    {
         "name": "Yggdrasil",
         "image": "resources/images/yggdrasil.png",
         "description": "Inspred by Norse mythology, I created a stylized version of Yggdrasil, the world tree that connects the nine realms. I modeled the tree using curves that were arrayed radially. The inner light comes from a smaller curve following the same path and using an emission shader. "
-    },
-
-    {
-        "name": "Substance Painter - Robot",
-        "image": "resources/images/Painted_robot_4_close.jpg",
-        "description": "A robot model I got to textured in Substance Painter. I focused on creating a worn metal look with some painted details to give it character."
-    },
-    
-    {
-        "name": "Artificial sorrow",
-        "image": "resources/images/sadrobot.png",
-        "description": "A material study in Blender focusing on creating a realistic silicone material. Additional inspiration taken from graphic realism styles."
     }
-
 
     
 ]
